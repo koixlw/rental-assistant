@@ -1,0 +1,6 @@
+# 手工补录房源链接（豆瓣/闲鱼/小红书等无法自动检索的渠道）
+# 每行一条，格式： 平台|链接  （平台可省略，会按域名自动识别）
+# 示例：
+# 小红书|https://www.xiaohongshu.com/explore/xxxxxxxx
+# 闲鱼|https://www.goofish.com/item?id=xxxxxxxx
+# 豆瓣|https://www.douban.com/group/topic/xxxxxxxx/

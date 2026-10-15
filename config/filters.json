@@ -1,0 +1,28 @@
+{
+  "price": { "min": 2000, "max": 4000 },
+  "rent_types": ["整租"],
+  "accepted_layouts": ["一室一厅", "一居室", "开间"],
+  "require_private_bath": true,
+  "min_area_sqm": 25,
+  "commute_limit_minutes": 60,
+  "max_distance_km": 10,
+  "anomaly_ratio": 0.75,
+  "scoring": {
+    "commute": 35,
+    "cost": 25,
+    "layout": 12,
+    "area": 8,
+    "comfort": 10,
+    "publisher": 5,
+    "confidence": 5
+  },
+  "sources": {
+    "beike":    { "enabled": true, "delay": [10, 20], "max_pages": 3,
+                  "long_pause_every": 6, "long_pause": [40, 90], "seen_ttl_hours": 24,
+                  "captcha_wait_minutes": 30, "cooldown_after_captcha": [60, 120] },
+    "ziroom":   { "enabled": true, "delay": [8, 18], "max_pages": 3 },
+    "anjuke":   { "enabled": false, "delay": [8, 16], "max_pages": 4 },
+    "58":       { "enabled": false, "delay": [8, 16], "max_pages": 4 },
+    "social":   { "enabled": true, "delay": [6, 14], "max_scroll": 8 }
+  }
+}
